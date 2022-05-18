@@ -1,0 +1,83 @@
+.Topbar{
+    top: 0;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    z-index: 999;
+   
+    
+  
+    background-color: #E87676;
+    
+    
+
+}
+.addedMenuItem{
+    display: flex;
+    
+}
+.sidebarListItemText{
+    text-decoration: none;
+    color:white;
+    padding: 0.5rem 1rem;
+    
+}
+.sidebarListItemText:hover{
+    color:black
+}
+.TopbarList{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    width:60vw;
+    grid-gap:10px;
+    text-align: center;
+    justify-content: end;
+    margin-left: 3%;
+
+    list-style: none;
+   
+}
+
+
+.TopbarLeft{
+    margin-top: 38px;
+    margin-left: 5rem;
+
+}
+.navmenu-bars{
+    display: none;
+}
+
+@media(max-width:1245px){
+    .Topbar{
+        height: 60px;
+        
+    }
+    .TopbarLeft{
+        margin-left: 3;
+    }
+    .leftbar{
+        width: 70vw;
+    }
+}
+@media(max-width:950px){
+    .Topbar{
+        height: 60px;
+        
+    }.TopbarLeft{
+        margin-right:70%;
+    }
+    .TopbarList{
+        display: none;
+    }
+    .navmenu-bars{
+        display: block;
+        font-size: 1.8rem;
+    }
+   
+
+
+}
+
