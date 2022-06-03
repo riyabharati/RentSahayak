@@ -20,8 +20,20 @@ const uploadSingleImage = (type: string, uploadPath: UploadPath) => {
       cb(null, new Date().getTime() + '-' + file.originalname.replace(/\s/g, ''))
     }
   })
+  const mul = multer({
+    fileFilter: imageFilter,
+    storage: myStorage
+  })
 
   return mul.single(type)
+}
+
+const fileRemover = (data) => {
+  fs.unlink(path.join(process.cwd(), FILE_PATH + data),
+    (err) => {
+      // eslint-disable-next-line no-console
+      console.log(err ? 'file removing error.' : 'File removed.')
+    })
 }
 
 export { uploadSingleImage, fileRemover }
