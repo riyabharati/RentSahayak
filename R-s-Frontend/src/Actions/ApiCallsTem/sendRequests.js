@@ -1,6 +1,6 @@
 import { AxiosResponse } from 'axios'
 
-import sendRequest from './sendRequests'
+import sendRequest from './sendRequest'
 
 
 import { apiEndPoints } from './ApiConstants'
