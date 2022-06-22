@@ -37,4 +37,9 @@ const apiAuthResendOtp= resendOtpData => {
   return sendRequest('PUT', apiEndPoints.auth.resendOtp, false, resendOtpData )
 }
 
+
+const apiAuthChangePassword = changePasswordData => {
+    return sendRequest('PUT', apiEndPoints.auth.changePassword, true, changePasswordData )
+  }
+
 export { apiAuthGetUser, apiAuthSignIn, apiAuthForgotPassword, apiAuthChangePassword, apiAuthResetPassword, apiAuthVerifyOtpCode, apiAuthResendOtp, apiAuthRegister }
