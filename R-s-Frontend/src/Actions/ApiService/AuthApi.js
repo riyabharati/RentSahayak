@@ -33,5 +33,9 @@ const apiFetchHouse=(data)=>{
 const apiPostHouse=(data)=>{
     return sendRequest("POST",apiEndPoints.auth.insertHouse,true,data)
 }
+
+const apiPostHouse=(data)=>{
+    return sendRequest("POST",apiEndPoints.auth.insertHouse,true,data)
+
   
 export {apiAuthLogin,apiAuthRegister,apiForgetPassword, apiAuthGetUser,apiVerifyOtp,apiResetPassword,apiUserProfile,apiUserUpdateProfile,apiFetchHouse,apiPostHouse}
