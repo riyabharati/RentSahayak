@@ -1,0 +1,62 @@
+.text-design{
+    color: #E87676;
+    text-align: center;
+   
+}
+.contain{
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    justify-items: center;
+    width: 70%;
+}
+.right-arrow{
+    position: absolute;
+    top:30%;
+    left:37%;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.left-arrow{
+    position: absolute;
+    top:30%;
+    right:37%;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.button-class{
+    color: white;
+    text-decoration: none;
+   
+
+    background-color: #E87676;
+    width: 10%;
+    height: 40px;
+    margin-left: 88%;
+    margin-top: -40px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: black;
+}
+.card-hover{
+    box-shadow: 0 0 0 1px #E2E9ED;
+    transition: 0.2s all;
+    z-index: 0;
+}
+.card-hover:hover{
+    z-index: 1;
+    box-shadow: 0 8px 50px rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}

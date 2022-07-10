@@ -1,0 +1,45 @@
+.text-design{
+    color: #E87676;
+    text-align: center;
+   
+}
+.contain{
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    justify-items: center;
+    width: 70%;
+}
+.right-arrow{
+    position: absolute;
+    top:30%;
+    left:37%;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.left-arrow{
+    position: absolute;
+    top:30%;
+    right:37%;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.button-class{
+    color: white;
+    text-decoration: none;
+   
+
+    background-color: #E87676;
+    width: 10%;
+    height: 40px;
+    margin-left: 88%;
+    margin-top: -40px;
+}
