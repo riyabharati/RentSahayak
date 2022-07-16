@@ -1,0 +1,14 @@
+.text-design{
+    color: #E87676;
+    text-align: center;
+   
+}
+.contain{
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    justify-items: center;
+    width: 70%;
+}

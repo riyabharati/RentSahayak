@@ -1,0 +1,40 @@
+.Team-container{
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.subteam-container{
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin-top: 30px;
+    margin-right: 12%;
+
+
+}
+.Team-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #E87676;
+    
+}
+.team-images1{
+    width: 170px;
+    border-radius: 100px;
+    height: 170px;
+
+}
+.team-images2{
+    width: 170px;
+    border-radius: 100px;
+    height: 170px;
+
+}
+.team-images3{
+    width: 170px;
+    border-radius: 100px;
+    height: 170px;
+
+}

@@ -1,0 +1,15 @@
+.sub-contain{
+    margin-left: 30%;
+    width: 50%;
+    margin-top: 3%;
+}
+.main-contain{
+    border: 3px solid rgb(209, 206, 206);
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.date-design{
+    font-size: small;
+    color:  rgb(136, 132, 132);
+}

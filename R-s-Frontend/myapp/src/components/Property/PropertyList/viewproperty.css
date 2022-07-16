@@ -1,0 +1,33 @@
+.property-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+.container{
+    width:78%; 
+    
+}
+.main-contain{
+    overflow-x: hidden;
+    padding: 2px;
+    
+}
+.card-container{
+    margin-left: 9%;
+    margin-top: 4%;
+    
+
+}
+.card1{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.card-design{
+    margin-left: 12px;
+    margin-top: 20px;
+    width: 67%;
+}

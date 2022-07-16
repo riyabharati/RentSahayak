@@ -1,0 +1,22 @@
+.main{
+   
+    overflow-x: hidden;
+    background-color: transparent;
+    margin-top: 30px;
+  
+}
+.main-container{
+    overflow-x: hidden;
+
+}
+.sider{
+    background-color: transparent;
+
+    margin-left:8.79%;
+}
+.table-main{
+    width:71%;
+    margin-right: 7%;
+}
+
+
