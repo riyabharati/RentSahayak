@@ -1,22 +1,28 @@
-import * as dotenv from 'dotenv-safe'
-import * as path from 'path'
+import { responseCode, userResponse } from '../utils/constants'
+import { verifyJWT } from '../utils/jsonwebtoken'
+import { FieldTypeUserJWT } from '../models/user/user.types'
+import { getUserValidStatus } from '../models/user/user.query'
 
-// import .env variables
-dotenv.config({
-  path: path.join(process.cwd(), './.env'),
-  sample: path.join(process.cwd(), './.env.example')
-})
+const authenticator = async (req, res, next) => {
+  const token = req.headers?.authorization
+  if (!token) {
+    return next({ message: userResponse.error.JWT_TOKEN, status: responseCode.UNAUTHORIZED })
+  }
+  try {
+    const user:FieldTypeUserJWT = await verifyJWT(token)
+    const userValidStatus = await getUserValidStatus(user.userId)
+    if (!userValidStatus.isInSystem) {
+      return next({ message: userResponse.error.USER_NOT_FOUND, status: responseCode.NOT_FOUND })
+    }
+    if (!userValidStatus.isActive) {
+      return next({ message: userResponse.error.USER_INACTIVE, status: responseCode.FORBIDDEN })
+    }
 
-export const envVars = {
-  DB_NAME: process.env.DB_NAME,
-  DB_PASS: process.env.DB_PASS,
-  DB_URL: process.env.DB_URL,
-  DB_USER: process.env.DB_USER,
-  ENVIRONMENT: process.env.NODE_ENV,
-  MAILER_HOST: process.env.MAILER_HOST,
-  MAILER_PASS: process.env.MAILER_PASS,
-  MAILER_PORT: parseInt(process.env.MAILER_PORT),
-  MAILER_USER: process.env.MAILER_USER,
-  PORT: process.env.PORT,
-  USE_CLOUD_DB: process.env.USE_CLOUD_DB
+    req.loggedInUser = user
+    next()
+  } catch (err) {
+    return next({ message: userResponse.error.JWT_TOKEN, status: responseCode.UNAUTHORIZED })
+  }
 }
+
+export { authenticator }
