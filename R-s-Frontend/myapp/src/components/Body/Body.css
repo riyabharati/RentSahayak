@@ -1,0 +1,75 @@
+.Sub-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-left:10%;
+   
+
+}
+.Image{
+    width: 78%;
+   
+   
+}
+.Heading{
+    font-size: 4rem;
+    margin-top: 20px;
+    color: #E87676;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph{
+    font-size: 1.3rem;
+    
+    letter-spacing:0.1ch;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.Button-style{
+    margin-top: 90px;
+    background-color: #E87676;
+    width: 160px;
+    height: 50px;
+    font-size: larger;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    margin-bottom: 40px;
+}
+.inputdesign{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid grey
+    
+}
+
+.Sub-container2{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 3%;
+
+    margin-top: -3%;
+   
+   
+
+}
+.sub-sub-container4{
+    margin-left: 7.6%;
+}
+@media(max-width:950px) {
+    .Image{
+       width: 850px;
+    }
+    .Button-style{
+        margin-top: 40px;
+    }
+    .Sub-container2{
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+    
+    
+   
+}

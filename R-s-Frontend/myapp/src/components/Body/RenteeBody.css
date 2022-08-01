@@ -1,0 +1,29 @@
+.containers{
+    display:flex;
+    justify-content: space-evenly;
+    justify-items: center;
+   
+    margin-top: 4%;
+    
+    
+
+   
+}
+
+.submain-container2{
+    margin-right: 5%;
+}
+@media(max-width:950px) {
+    .containers{
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+    .Image{
+        width: 600px;
+        
+    }
+    
+    
+    
+   
+}
